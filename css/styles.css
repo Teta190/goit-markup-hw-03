@@ -67,7 +67,6 @@ img {
   gap: 40px;
 }
 .item-nav {
-  padding: 24px 0;
 }
 .address {
   display: flex;
@@ -102,6 +101,7 @@ img {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 .link-nav:hover,
 .link-nav:focus {
