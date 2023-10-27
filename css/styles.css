@@ -52,6 +52,7 @@ img {
   background-color: #ffffff;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-box {
   display: flex;
@@ -59,10 +60,14 @@ img {
 }
 .nav-menu {
   display: flex;
+  align-items: center;
 }
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
+}
+.item-nav {
+  padding: 24px 0;
 }
 .address {
   display: flex;
@@ -150,6 +155,10 @@ img {
   letter-spacing: 0.04em;
   cursor: pointer;
   align-items: center;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .main-button:hover {
   background: var(--OCEAN, #404bbf);
@@ -165,17 +174,17 @@ img {
 .stranghts-box {
 }
 
-.stranghts-title {
-  color: var(--NAVY-BLUE, #2e2f42);
-  text-align: center;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  align-items: center;
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0000);
 }
 .list-strangths {
   display: flex;
@@ -195,7 +204,7 @@ img {
   gap: 8px;
   width: calc((100%-3 * 24px) / 4);
 }
-.title-str {
+.title-our-str {
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Roboto;
   font-size: 20px;
@@ -213,12 +222,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+/* =======our-team========== */
 .hero-team {
   background: var(--CLOUD, #f4f4fd);
   height: 732px;
-  padding: 120px o;
+  padding: 120px 0;
 }
-/*================== OUR TEAM  3 SEC =========== */
 .our-team {
   color: #2e2f42;
   text-align: center;
@@ -266,6 +275,8 @@ img {
 /*================= PORTFOLIO 4 SEC=========== */
 .portfolio {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .title-portfolio {
