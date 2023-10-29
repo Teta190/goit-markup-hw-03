@@ -274,7 +274,7 @@ img {
 
 /*================= PORTFOLIO 4 SEC=========== */
 .portfolio {
-  background-color: #f4f4fd;
+  /* background-color: #f4f4fd; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -290,7 +290,7 @@ img {
   margin-bottom: 72px;
 }
 .item-portfolio {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 .menu-portfolio {
   display: flex;
